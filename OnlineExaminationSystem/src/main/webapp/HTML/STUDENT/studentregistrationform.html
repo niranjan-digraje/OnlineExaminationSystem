@@ -29,17 +29,16 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <body>
 
-    <!-- ================= NAVBAR START ================= -->
+<!-- ================= NAVBAR START ================= -->
 
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success ">
 
     <div class="container">
 
         <!-- LOGO -->
 
         <a class="navbar-brand fw-bold fs-4"
-           href="../Home.html">
+           href="#">
 
             <i class="bi bi-mortarboard-fill me-2"></i>
 
@@ -74,8 +73,12 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
 <!-- ================= NAVBAR END ================= -->
 
-<!-- ================= MAIN CONTAINER ================= -->
 
+
+
+
+
+<!-- ================= MAIN CONTAINER ================= -->
 
 <div class="container-fluid main-container">
 
@@ -123,7 +126,9 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <!-- ================= FORM START ================= -->
 
             <form action="#"
-                  method="post">
+                  method="post"
+                  name="regForm"
+                  onsubmit="return validateForm()">
 
                 <!-- ROW 1 -->
 
@@ -150,8 +155,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                             <input type="text"
                                    name="name"
                                    class="form-control"
-                                   placeholder="Enter full name"
-                                   required>
+                                   placeholder="Enter full name">
 
                         </div>
 
@@ -180,8 +184,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                             <input type="email"
                                    name="email"
                                    class="form-control"
-                                   placeholder="Enter email"
-                                   required>
+                                   placeholder="Enter email">
 
                         </div>
 
@@ -218,8 +221,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                             <input type="text"
                                    name="mobile"
                                    class="form-control"
-                                   placeholder="Enter mobile number"
-                                   required>
+                                   placeholder="Enter mobile number">
 
                         </div>
 
@@ -246,8 +248,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                             </span>
 
                             <select name="course"
-                                    class="form-select"
-                                    required>
+                                    class="form-select">
 
                                 <option value="">
 
@@ -326,8 +327,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                                 <input class="form-check-input"
                                        type="radio"
                                        name="gender"
-                                       value="Male"
-                                       required>
+                                       value="Male">
 
                                 <label class="form-check-label">
 
@@ -383,8 +383,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                             <input type="password"
                                    name="password"
                                    class="form-control"
-                                   placeholder="Enter password"
-                                   required>
+                                   placeholder="Enter password">
 
                         </div>
 
@@ -434,11 +433,22 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
     </div>
 
 </div>
+<footer>
 
+    <h6>
+
+        © 2026 Online Examination System | All Rights Reserved
+
+    </h6>
+
+</footer>
 <!-- Bootstrap JS -->
- <script src="../JS/STUDENT/studentregister.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- External JS -->
+
+<script src="../../JS/STUDENT/studentregister.js"></script>
 
 </body>
 

@@ -13,17 +13,18 @@ body{
 
     min-height:100vh;
 
-     background:rgb(255, 255, 255);
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    background:#ffffff;
 
     font-family:Arial, sans-serif;
+}
 
-    padding:30px;
+
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    padding:15px 0px;
 }
 
 
@@ -32,13 +33,12 @@ body{
 
 .main-container{
 
-    width:100%;
-    max-width:1200px;
+    padding:60px ;
 }
 
 
 
-/* ================= CARD ================= */
+/* ================= REGISTER BOX ================= */
 
 .register-card{
 
@@ -48,7 +48,7 @@ body{
 
     overflow:hidden;
 
-    box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+    box-shadow:0px 10px 30px rgba(0,0,0,0.15);
 }
 
 
@@ -57,9 +57,9 @@ body{
 
 .left-side{
 
-    /* background:linear-gradient(135deg,#0f172a,#2563eb); */
     background:#eefaf3;
-     color:#198754;
+
+    text-align:center;
 
     padding:60px 40px;
 
@@ -68,39 +68,6 @@ body{
     flex-direction:column;
 
     justify-content:center;
-
-    text-align:center;
-}
-
-
-
-.left-side h1{
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-}
-
-
-
-.left-side p{
-
-    font-size:18px;
-
-    line-height:30px;
-}
-
-
-
-/* ================= IMAGE ================= */
-
-.student-image{
-
-    width:280px;
-
-    margin:auto;
-
-    margin-top:30px;
 }
 
 
@@ -109,12 +76,51 @@ body{
 
 .right-side{
 
-    padding:40px;
+    padding:50px;
 }
 
 
 
-/* ================= TITLE ================= */
+/* ================= IMAGE ================= */
+
+.student-image{
+
+    width:220px;
+
+    margin:auto;
+
+    margin-top:20px;
+}
+
+
+
+/* ================= TITLES ================= */
+
+.left-side h1{
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#198754;
+
+    margin-bottom:20px;
+}
+
+
+
+.left-side p{
+
+    color:gray;
+
+    font-size:18px;
+
+    line-height:30px;
+}
+
+
+
+/* ================= FORM TITLE ================= */
 
 .form-title{
 
@@ -124,7 +130,9 @@ body{
 
     font-weight:bold;
 
-    color:#0f172a;
+    color:#198754;
+
+    font-size:38px;
 }
 
 
@@ -134,16 +142,20 @@ body{
 .form-control,
 .form-select{
 
-    height:50px;
+    height:55px;
 
-    border-radius:10px;
+    border-radius:12px;
 }
 
 
 
+/* ================= INPUT ICON ================= */
+
 .input-group-text{
 
-    border-radius:10px 0px 0px 10px;
+    background:white;
+
+    border-radius:12px 0px 0px 12px;
 }
 
 
@@ -152,11 +164,13 @@ body{
 
 .gender-box{
 
-    height:50px;
+    height:55px;
 
     display:flex;
 
     align-items:center;
+
+    padding-left:10px;
 }
 
 
@@ -167,15 +181,15 @@ body{
 
     width:100%;
 
-    height:50px;
+    height:55px;
 
-    border-radius:10px;
+    border-radius:30px;
 
     font-size:18px;
 
     font-weight:bold;
 
-    margin-top:15px;
+    margin-top:20px;
 }
 
 
@@ -187,6 +201,8 @@ body{
     text-align:center;
 
     margin-top:20px;
+
+    color:#555;
 }
 
 
@@ -198,6 +214,23 @@ body{
     font-weight:bold;
 
     color:#198754;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    box-shadow:0px -2px 10px rgba(0,0,0,0.1);
 }
 
 
@@ -218,7 +251,26 @@ body{
 
     .student-image{
 
-        width:220px;
+        width:180px;
     }
 
+    .form-title{
+
+        font-size:30px;
+    }
+
+}
+/* FOOTER */
+
+footer{
+
+    background:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    box-shadow:0px -2px 10px rgba(0,0,0,0.1);
 }
