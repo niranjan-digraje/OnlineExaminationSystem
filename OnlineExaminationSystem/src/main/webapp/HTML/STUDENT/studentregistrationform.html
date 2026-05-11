@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Student Registration</title>
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- External CSS -->
+
+<link rel="stylesheet"
+      href="../../CSS/STUDENT/studentregister.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR START ================= -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+
+    <div class="container">
+
+        <!-- LOGO -->
+
+        <a class="navbar-brand fw-bold fs-4"
+           href="../Home.html">
+
+            <i class="bi bi-mortarboard-fill me-2"></i>
+
+            Online Examination System
+
+        </a>
+
+
+
+        <!-- MENU -->
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item me-4">
+
+                <a class="nav-link active"
+                   href="../Home.html">
+
+                    <i class="bi bi-house-fill me-1"></i>
+
+                    Home
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ================= NAVBAR END ================= -->
+
+<!-- ================= MAIN CONTAINER ================= -->
+
+
+<div class="container-fluid main-container">
+
+    <div class="row register-card">
+
+        <!-- ================= LEFT SIDE ================= -->
+
+        <div class="col-lg-5 left-side">
+
+            <h1>
+
+                Online Examination System
+
+            </h1>
+
+            <p>
+
+                Register yourself and start your online examination journey.
+                Attend exams, view results and manage your learning.
+
+            </p>
+
+            <!-- IMAGE -->
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+                 class="student-image"
+                 alt="Student">
+
+        </div>
+
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="col-lg-7 right-side">
+
+            <h2 class="form-title">
+
+                Student Registration
+
+            </h2>
+
+
+
+            <!-- ================= FORM START ================= -->
+
+            <form action="#"
+                  method="post">
+
+                <!-- ROW 1 -->
+
+                <div class="row">
+
+                    <!-- FULL NAME -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Full Name
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-person-fill"></i>
+
+                            </span>
+
+                            <input type="text"
+                                   name="name"
+                                   class="form-control"
+                                   placeholder="Enter full name"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Email
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-envelope-fill"></i>
+
+                            </span>
+
+                            <input type="email"
+                                   name="email"
+                                   class="form-control"
+                                   placeholder="Enter email"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- ROW 2 -->
+
+                <div class="row">
+
+                    <!-- MOBILE -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Mobile Number
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-telephone-fill"></i>
+
+                            </span>
+
+                            <input type="text"
+                                   name="mobile"
+                                   class="form-control"
+                                   placeholder="Enter mobile number"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Course
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-book-fill"></i>
+
+                            </span>
+
+                            <select name="course"
+                                    class="form-select"
+                                    required>
+
+                                <option value="">
+
+                                    Select Course
+
+                                </option>
+
+                                <option value="B.E">
+
+                                    B.E
+
+                                </option>
+
+                                <option value="B.Tech">
+
+                                    B.Tech
+
+                                </option>
+
+                                <option value="MCA">
+
+                                    MCA
+
+                                </option>
+
+                                <option value="BCA">
+
+                                    BCA
+
+                                </option>
+
+                                <option value="MBA">
+
+                                    MBA
+
+                                </option>
+
+                                <option value="Diploma">
+
+                                    Diploma
+
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- ROW 3 -->
+
+                <div class="row">
+
+                    <!-- GENDER -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Gender
+
+                        </label>
+
+                        <div class="gender-box">
+
+                            <!-- MALE -->
+
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="gender"
+                                       value="Male"
+                                       required>
+
+                                <label class="form-check-label">
+
+                                    Male
+
+                                </label>
+
+                            </div>
+
+
+
+                            <!-- FEMALE -->
+
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="gender"
+                                       value="Female">
+
+                                <label class="form-check-label">
+
+                                    Female
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">
+
+                            Password
+
+                        </label>
+
+                        <div class="input-group">
+
+                            <span class="input-group-text">
+
+                                <i class="bi bi-lock-fill"></i>
+
+                            </span>
+
+                            <input type="password"
+                                   name="password"
+                                   class="form-control"
+                                   placeholder="Enter password"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- REGISTER BUTTON -->
+
+                <button type="submit"
+                        class="btn btn-success btn-register">
+
+                    <i class="bi bi-person-plus-fill me-2"></i>
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <!-- ================= FORM END ================= -->
+
+
+
+
+
+            <!-- LOGIN LINK -->
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="../STUDENT/studentlogin.html">
+
+                    Back to Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+ <script src="../JS/STUDENT/studentregister.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
