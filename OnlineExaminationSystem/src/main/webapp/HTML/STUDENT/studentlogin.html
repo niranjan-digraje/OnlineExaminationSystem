@@ -178,7 +178,7 @@
 
             <!-- FORM START -->
 
-            <form onsubmit="return validateLogin()">
+            <form action="/OnlineExaminationSystem/loginuser" method="post">
 
 
 
@@ -200,7 +200,7 @@
 
                         </span>
 
-                        <input type="email"
+                        <input type="email" name="email"
                                id="email"
                                class="form-control"
                                placeholder="Enter your email id">
@@ -231,7 +231,7 @@
 
                         </span>
 
-                        <input type="password"
+                        <input type="password" name="password"
                                id="password"
                                class="form-control"
                                placeholder="Enter your password">
@@ -276,7 +276,12 @@
 
 
 
-                <!-- REGISTER LINK -->
+               
+
+
+
+            </form>
+             <!-- REGISTER LINK -->
 
                 <div class="text-center mt-4">
 
@@ -290,10 +295,6 @@
                     </a>
 
                 </div>
-
-
-
-            </form>
 
             <!-- FORM END -->
 
