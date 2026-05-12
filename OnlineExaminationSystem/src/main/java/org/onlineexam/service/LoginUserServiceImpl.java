@@ -10,5 +10,10 @@ public class LoginUserServiceImpl implements LoginUserService {
         // TODO Auto-generated method stub
         return loginUserRepo.getRole(email, password);
     }
+     @Override
+    public String getUserName(String email) {
+        // TODO Auto-generated method stub
+        return loginUserRepo.getUserName(email);
+    }
 
 }

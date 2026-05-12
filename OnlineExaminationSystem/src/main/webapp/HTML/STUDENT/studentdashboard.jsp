@@ -1,3 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%
+    // Fetch Session Data
+
+    String user =
+    (String) session.getAttribute("user");
+
+    // Session Validation
+
+    if(user == null){
+
+        response.sendRedirect("../Home.html");
+
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,13 +58,25 @@
 
         <!-- STUDENT PROFILE -->
 
-        <div class="student-profile text-white">
+                <div class="admin-profile text-white d-flex align-items-center">
 
-            <i class="bi bi-person-circle me-2"></i>
+    <i class="bi bi-person-circle me-2 fs-4"></i>
 
-            Student Profile
+    <span class="me-3 fw-bold">
+        <%= user %>
+    </span>
 
-        </div>
+    <a href="../../logout"
+       class="btn btn-danger btn-sm">
+
+        <i class="bi bi-box-arrow-right"></i>
+
+        Logout
+    </a>
+
+</div>
+
+    </div>
 
     </div>
 

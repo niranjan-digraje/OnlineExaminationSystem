@@ -4,4 +4,5 @@ import org.onlineexam.model.UserModel;
 
 public interface RegisterUserRepo {
     public boolean isRegisterUser(UserModel userModel);
+    public String getUserName(String email);
 }

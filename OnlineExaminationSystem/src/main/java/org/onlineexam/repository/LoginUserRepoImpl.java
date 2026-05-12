@@ -1,5 +1,6 @@
 package org.onlineexam.repository;
 
+import java.sql.ResultSet;
 
 public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
 
@@ -38,6 +39,32 @@ public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
             e.printStackTrace();
         }
 
+        return null;
+    }
+
+    @Override
+    public String getUserName(String email) {
+       try {
+
+            String query =
+            "SELECT full_name FROM users WHERE email=?";
+
+            stmt =
+                    conn.prepareStatement(query);
+
+            stmt.setString(1, email);
+
+            ResultSet rs = stmt.executeQuery();
+
+            if(rs.next()) {
+
+                return rs.getString("full_name");
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
         return null;
     }
 

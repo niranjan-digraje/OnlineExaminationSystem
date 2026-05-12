@@ -11,5 +11,10 @@ public class RegisterUserServiceImpl implements RegisterUserService{
         // TODO Auto-generated method stub
         return repo.isRegisterUser(userModel);
     }
+    @Override
+    public String getUserName(String email) {
+        // TODO Auto-generated method stub
+        return repo.getUserName(email);
+    }
 
 }
