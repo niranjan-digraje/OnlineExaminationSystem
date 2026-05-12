@@ -35,7 +35,8 @@ public class LoginUser extends HttpServlet {
 		String role = loginUserService.getRole(email, password);
         // Temporary Login Validation
 		System.out.println(role+" in login user");
-        if(role.equals("ADMIN"))
+        if (role != null) {
+            if(role.equals("ADMIN"))
         {
             // Create Session
 
@@ -57,6 +58,8 @@ public class LoginUser extends HttpServlet {
 
             response.sendRedirect("HTML/STUDENT/studentdashboard.html");
 		}
+
+        }
         else
         {
             out.println("<h2 style='color:red;text-align:center;'>");
