@@ -62,7 +62,6 @@ public class LoginUser extends HttpServlet {
             out.println("<h2 style='color:red;text-align:center;'>");
             out.println("Invalid Email or Password");
             out.println("</h2>");
-
             out.println("<div style='text-align:center;'>");
             out.println("<a href='HTML/Home.html'>");
             out.println("Try Again");
