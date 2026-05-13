@@ -1,5 +1,8 @@
 package org.onlineexam.repository;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.onlineexam.model.ExamModel;
 
 public class ExamRepositoryImpl extends DBConfig
@@ -33,4 +36,40 @@ implements ExamRepository {
             return false;
         }
     }
+
+    @Override
+public List<ExamModel> getAllExams() {
+
+    List<ExamModel> list =
+            new ArrayList<ExamModel>();
+
+    try {
+
+        stmt = conn.prepareStatement(
+                "select * from exam");
+
+        rs = stmt.executeQuery();
+
+        while(rs.next()){
+
+            ExamModel model =
+                    new ExamModel();
+
+            model.setExamId(
+                    rs.getInt("exam_id"));
+
+            model.setExamTitle(
+                    rs.getString("exam_title"));
+
+            list.add(model);
+        }
+
+    } catch (Exception e) {
+
+        System.out.println(
+                "getAllExams Error : " + e);
+    }
+
+    return list;
+}
 }

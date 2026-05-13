@@ -43,7 +43,8 @@
 
                             <div class="d-flex align-items-center">
 
-                                <a href="teacherdashboard.jsp" class="btn btn-light me-3">
+                                <a href="/OnlineExaminationSystem/HTML/TEACHER/teacherdashboard.jsp"
+                                    class="btn btn-light me-3">
 
                                     <i class="bi bi-arrow-left"></i>
 

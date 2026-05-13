@@ -212,7 +212,7 @@
 
 
 
-                    <!-- VIEW EXAMS -->
+                    <!-- SET EXAMS -->
 
                     <div class="col-md-6">
 
@@ -236,7 +236,7 @@
 
                             <div class="card-right">
 
-                                <a href="../TEACHER/createexam.html">
+                                <a href="/OnlineExaminationSystem/setquestion">
                                     <i class="bi bi-arrow-right-circle-fill arrow-icon"></i>
                                 </a>
                             </div>
