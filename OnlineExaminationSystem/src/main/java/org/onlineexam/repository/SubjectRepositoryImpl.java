@@ -209,4 +209,41 @@ public class SubjectRepositoryImpl extends DBConfig implements SubjectRepository
         return model;
     }
     
+    @Override
+public List<SubjectModel> getExamAllSubjects() {
+
+    List<SubjectModel> list =
+            new ArrayList<>();
+
+    try {
+
+        stmt = conn.prepareStatement(
+        "select * from subject");
+
+        rs = stmt.executeQuery();
+
+        while(rs.next()){
+
+            SubjectModel model =
+                    new SubjectModel();
+
+            model.setSubjectId(
+                    rs.getInt("subject_id"));
+
+            model.setSubjectName(
+                    rs.getString("subject_name"));
+
+            model.setCourseId(
+                    rs.getInt("course_id"));
+
+            list.add(model);
+        }
+
+    } catch (Exception e) {
+
+        System.out.println(e);
+    }
+
+    return list;
+}
 }

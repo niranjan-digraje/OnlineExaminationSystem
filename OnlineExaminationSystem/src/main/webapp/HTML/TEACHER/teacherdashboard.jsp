@@ -201,7 +201,7 @@
 
                             <div class="card-right">
 
-                                <a href="../TEACHER/createexam.html">
+                                <a href="/OnlineExaminationSystem/createexampage">
                                     <i class="bi bi-arrow-right-circle-fill arrow-icon"></i>
                                 </a>
                             </div>
@@ -228,7 +228,7 @@
 
                             <div class="card-center">
 
-                                <h3>VIEW EXAMS</h3>
+                                <h3>SET QUESTIONS</h3>
 
                             </div>
 

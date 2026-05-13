@@ -48,4 +48,10 @@ public class SubjectServiceImpl implements SubjectService {
 
         return repo.isUpdateSubject(model);
     }
+
+    @Override
+public List<SubjectModel> getExamAllSubjects() {
+
+    return repo.getAllSubjects();
+}
 }

@@ -20,4 +20,6 @@ public interface SubjectRepository {
     public SubjectModel fetchSubjectById(int subjectId);
 
     public boolean isUpdateSubject(SubjectModel model);
+
+    public List<SubjectModel> getExamAllSubjects();
 }
