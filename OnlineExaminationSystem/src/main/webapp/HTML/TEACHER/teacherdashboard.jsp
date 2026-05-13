@@ -165,7 +165,7 @@
 
                             <div class="card-right">
 
-                                <a href="../TEACHER/addsubjects.html">
+                                <a href="/OnlineExaminationSystem/loadsubjectpage">
                                     <i class="bi bi-arrow-right-circle-fill arrow-icon"></i>
                                 </a>
 
