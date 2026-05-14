@@ -10,6 +10,9 @@ public class ResultModel {
     private double percentage;
     private String resultStatus;
 
+    private String userName;
+    private String examTitle;
+
     public int getResultId() {
         return resultId;
     }
@@ -64,5 +67,21 @@ public class ResultModel {
 
     public void setResultStatus(String resultStatus) {
         this.resultStatus = resultStatus;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getExamTitle() {
+        return examTitle;
+    }
+
+    public void setExamTitle(String examTitle) {
+        this.examTitle = examTitle;
     }
 }
