@@ -12,6 +12,11 @@ public class ExamServiceImpl implements ExamService {
             new ExamRepositoryImpl();
 
     @Override
+    public List<ExamModel> getStudentExams(String email) {
+        // TODO Auto-generated method stub
+        return repo.getStudentExams(email);
+    }
+    @Override
     public boolean isAddExam(ExamModel model) {
 
         return repo.isAddExam(model);
@@ -21,4 +26,9 @@ public List<ExamModel> getAllExams() {
 
     return repo.getAllExams();
 }
+    @Override
+    public ExamModel getExamById(int examId) {
+        // TODO Auto-generated method stub
+        return repo.getExamById(examId);
+    }
 }

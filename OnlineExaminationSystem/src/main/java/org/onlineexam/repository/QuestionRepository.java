@@ -15,5 +15,6 @@ public interface QuestionRepository {
 public QuestionModel getQuestionById(int questionId);
 
 public boolean isUpdateQuestion(QuestionModel model);
+public List<QuestionModel> getQuestionsByExamId(int examId);
 
 }

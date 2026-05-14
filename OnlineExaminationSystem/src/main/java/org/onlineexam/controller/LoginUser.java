@@ -106,28 +106,31 @@ public class LoginUser extends HttpServlet {
 
         String password =
                 request.getParameter("password");
-
+        
         LoginUserService service =
                 new LoginUserServiceImpl();
 
         String role =
                 service.getRole(email, password);
-
+        
         if(role != null) {
 
             String fullName =
                     service.getUserName(email);
+            int userId = service.getUserId(email, password);
 
             // Session
 
             HttpSession session =
                     request.getSession();
-
+            session.setAttribute("userId", userId);
             session.setAttribute("user", fullName);
 
             session.setAttribute("role", role);
 
             session.setAttribute("email", email);
+
+            
 
             // Redirect
 

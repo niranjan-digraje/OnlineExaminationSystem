@@ -8,4 +8,6 @@ public interface ExamRepository {
 
     public boolean isAddExam(ExamModel model);
     public List<ExamModel> getAllExams();
+    public List<ExamModel> getStudentExams(String email);
+    public ExamModel getExamById(int examId);
 }

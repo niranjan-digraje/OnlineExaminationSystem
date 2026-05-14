@@ -197,4 +197,56 @@ public class QuestionRepositoryImpl extends DBConfig implements QuestionReposito
 
         return false;
     }
+
+    @Override
+public List<QuestionModel> getQuestionsByExamId(int examId) {
+
+    List<QuestionModel> list =
+            new ArrayList<QuestionModel>();
+
+    try {
+
+        stmt = conn.prepareStatement(
+                "select * from question where exam_id=?");
+
+        stmt.setInt(1, examId);
+
+        rs = stmt.executeQuery();
+
+        while(rs.next()) {
+
+            QuestionModel model =
+                    new QuestionModel();
+
+            model.setQuestionId(
+                    rs.getInt("question_id"));
+
+            model.setQuestionText(
+                    rs.getString("question_text"));
+
+            model.setOptionA(
+                    rs.getString("option_a"));
+
+            model.setOptionB(
+                    rs.getString("option_b"));
+
+            model.setOptionC(
+                    rs.getString("option_c"));
+
+            model.setOptionD(
+                    rs.getString("option_d"));
+
+            model.setCorrectAnswer(
+                    rs.getString("correct_answer"));
+
+            list.add(model);
+        }
+
+    } catch(Exception e) {
+
+        System.out.println(e);
+    }
+
+    return list;
+}
 }

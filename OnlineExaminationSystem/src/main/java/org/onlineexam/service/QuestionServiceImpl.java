@@ -40,4 +40,10 @@ public class QuestionServiceImpl implements QuestionService {
 
         return repository.getAllQuestions();
     }
+
+    @Override
+    public List<QuestionModel> getQuestionsByExamId(int examId) {
+        // TODO Auto-generated method stub
+        return repository.getQuestionsByExamId(examId);
+    }
 }

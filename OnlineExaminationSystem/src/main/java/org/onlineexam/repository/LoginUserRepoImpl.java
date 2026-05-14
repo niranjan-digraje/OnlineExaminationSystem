@@ -68,4 +68,41 @@ public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
         return null;
     }
 
+    @Override
+    public int getUserId(String email, String password) {
+        try {
+
+            // SQL Query
+
+            
+
+            // Prepared Statement
+
+            stmt = conn.prepareStatement("SELECT user_id FROM users WHERE email=? AND password=?");
+
+            stmt.setString(1, email.trim());
+
+            stmt.setString(2, password.trim());
+
+            // Execute Query
+
+            rs = stmt.executeQuery();
+
+            // Check Result
+
+            if (rs.next()) {
+                System.out.print(rs.getInt(1));
+                return rs.getInt(1);
+            }else{
+                return 0;
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+
+        return 0;
+    }
+    
 }

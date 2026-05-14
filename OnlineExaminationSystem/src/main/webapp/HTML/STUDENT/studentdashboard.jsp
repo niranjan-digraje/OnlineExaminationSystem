@@ -129,11 +129,13 @@
 
 
 
-                <div class="card-right">
+                <a href="/OnlineExaminationSystem/studentexams">
+                    <div class="card-right">
 
                     <i class="bi bi-arrow-right-circle-fill arrow-icon"></i>
 
                 </div>
+                </a>
 
             </div>
 

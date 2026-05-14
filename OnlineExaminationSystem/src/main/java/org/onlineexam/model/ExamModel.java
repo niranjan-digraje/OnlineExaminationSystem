@@ -11,6 +11,12 @@ public class ExamModel {
     private String examDate;
     private String startTime;
     private String endTime;
+    private String examDateString;
+
+
+private String startTimeString;
+
+private String endTimeString;
 
     public int getExamId() {
         return examId;
@@ -83,4 +89,38 @@ public class ExamModel {
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
+
+    private String subjectName;
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+
+    public String getExamDateString() {
+    return examDateString;
+}
+
+public void setExamDateString(String examDateString) {
+    this.examDateString = examDateString;
+}
+
+public String getStartTimeString() {
+    return startTimeString;
+}
+
+public void setStartTimeString(String startTimeString) {
+    this.startTimeString = startTimeString;
+}
+
+public String getEndTimeString() {
+    return endTimeString;
+}
+
+public void setEndTimeString(String endTimeString) {
+    this.endTimeString = endTimeString;
+}
 }
