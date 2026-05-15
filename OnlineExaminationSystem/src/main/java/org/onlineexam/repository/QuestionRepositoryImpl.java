@@ -7,7 +7,7 @@ import org.onlineexam.model.QuestionModel;
 
 public class QuestionRepositoryImpl extends DBConfig implements QuestionRepository {
 
-    List<QuestionModel> list = new ArrayList<QuestionModel>();
+    List<QuestionModel> list = new ArrayList<>();
 
     @Override
     public boolean isAddQuestion(QuestionModel model) {
@@ -202,7 +202,7 @@ public class QuestionRepositoryImpl extends DBConfig implements QuestionReposito
 public List<QuestionModel> getQuestionsByExamId(int examId) {
 
     List<QuestionModel> list =
-            new ArrayList<QuestionModel>();
+            new ArrayList<>();
 
     try {
 

@@ -305,7 +305,7 @@
 
                             <div class="card-right">
 
-                                <a href="../TEACHER/viewresult.html">
+                                <a href="/OnlineExaminationSystem/viewadminresult">
                                     <i class="bi bi-arrow-right-circle-fill arrow-icon"></i>
                                 </a>
                             </div>

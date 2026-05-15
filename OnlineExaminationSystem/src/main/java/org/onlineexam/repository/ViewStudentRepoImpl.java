@@ -13,9 +13,10 @@ implements ViewStudentRepo {
     @Override
     public List<UserModel> getAllStudents() {
 
+        System.out.println("line 16");
         try {
 
-            list = new ArrayList<UserModel>();
+            list = new ArrayList<>();
 
             String query =
 
@@ -41,11 +42,10 @@ implements ViewStudentRepo {
                 model.setUserEmail(rs.getString("email"));
 
                 model.setUserMobile(rs.getString("mobile"));
-
+                //System.out.println(rs.getString("course_name"));
                 model.setCourseName(rs.getString("course_name"));
 
                 model.setUserCourseId(rs.getInt("course_id"));
-
                 list.add(model);
             }
 

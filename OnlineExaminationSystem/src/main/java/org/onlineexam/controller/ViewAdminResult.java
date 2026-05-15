@@ -14,26 +14,23 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/viewresult")
-public class ViewResult extends HttpServlet {
+@WebServlet("/viewadminresult")
+public class ViewAdminResult extends HttpServlet {
 
-    @Override
-	protected void doGet(HttpServletRequest request,
+    protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
 
         ResultService service =
-        new ResultServiceImpl();
+                new ResultServiceImpl();
 
         List<ResultModel> list =
-        service.getAllResults();
+                service.getAllResults();
 
         request.setAttribute("results", list);
 
-        RequestDispatcher r =
         request.getRequestDispatcher(
-            "/HTML/STUDENT/result.jsp");
-
-        r.forward(request, response);
+        "/HTML/TEACHER/result.jsp")
+        .forward(request, response);
     }
 }

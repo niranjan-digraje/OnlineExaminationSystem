@@ -13,5 +13,5 @@ public interface StudentService {
 
     public boolean isUpdateStudent(UserModel model);
 
-    
+
 }

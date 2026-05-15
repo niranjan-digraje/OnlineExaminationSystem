@@ -1,27 +1,26 @@
 package org.onlineexam.controller;
 
+import java.io.IOException;
+import java.util.List;
+
+import org.onlineexam.model.ExamModel;
+import org.onlineexam.model.QuestionModel;
+import org.onlineexam.service.ExamService;
+import org.onlineexam.service.ExamServiceImpl;
+import org.onlineexam.service.QuestionService;
+import org.onlineexam.service.QuestionServiceImpl;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
-import java.util.List;
-
-import org.onlineexam.model.ExamModel;
-import org.onlineexam.model.QuestionModel;
-
-import org.onlineexam.service.ExamService;
-import org.onlineexam.service.ExamServiceImpl;
-
-import org.onlineexam.service.QuestionService;
-import org.onlineexam.service.QuestionServiceImpl;
-
 @WebServlet("/setquestion")
 public class SetQuestion extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request,
+    @Override
+	protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -54,7 +53,8 @@ public class SetQuestion extends HttpServlet {
                 .forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request,
+    @Override
+	protected void doPost(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException, IOException {
 

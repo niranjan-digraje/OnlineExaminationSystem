@@ -16,7 +16,8 @@ public class LoginUserServiceImpl implements LoginUserService {
         return loginUserRepo.getUserName(email);
     }
 
-    public int getUserId(String email, String password) {
+    @Override
+	public int getUserId(String email, String password) {
         // TODO Auto-generated method stub
         return loginUserRepo.getUserId(email, password);
     }

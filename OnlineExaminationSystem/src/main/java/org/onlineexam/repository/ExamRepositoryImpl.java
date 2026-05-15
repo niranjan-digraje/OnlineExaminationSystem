@@ -1,6 +1,5 @@
 package org.onlineexam.repository;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +40,7 @@ public class ExamRepositoryImpl extends DBConfig
     @Override
     public List<ExamModel> getAllExams() {
 
-        List<ExamModel> list = new ArrayList<ExamModel>();
+        List<ExamModel> list = new ArrayList<>();
 
         try {
 

@@ -208,7 +208,7 @@ public class SubjectRepositoryImpl extends DBConfig implements SubjectRepository
 
         return model;
     }
-    
+
     @Override
 public List<SubjectModel> getExamAllSubjects() {
 

@@ -15,7 +15,7 @@ public class StudentRepositoryImpl extends DBConfig
 
         try {
 
-            list = new ArrayList<UserModel>();
+            list = new ArrayList<>();
 
             stmt = conn.prepareStatement(
                 "select * from users where role='STUDENT'");
@@ -29,6 +29,7 @@ public class StudentRepositoryImpl extends DBConfig
                 model.setUserId(rs.getInt("user_id"));
                 model.setUserName(rs.getString("full_name"));
                 model.setUserEmail(rs.getString("email"));
+        
                 model.setUserMobile(rs.getString("mobile"));
                 model.setUserGender(rs.getString("gender"));
 
@@ -64,7 +65,7 @@ public class StudentRepositoryImpl extends DBConfig
             return false;
         }
     }
-    
+
     @Override
     public UserModel getStudentById(int id) {
 

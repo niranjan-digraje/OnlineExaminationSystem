@@ -11,7 +11,7 @@ public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
 
             // SQL Query
 
-            
+
 
             // Prepared Statement
 
@@ -74,7 +74,7 @@ public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
 
             // SQL Query
 
-            
+
 
             // Prepared Statement
 
@@ -104,5 +104,5 @@ public class LoginUserRepoImpl extends DBConfig implements LoginUserRepo {
 
         return 0;
     }
-    
+
 }

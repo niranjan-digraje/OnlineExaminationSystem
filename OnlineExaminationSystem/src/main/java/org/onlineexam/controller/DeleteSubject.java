@@ -14,7 +14,8 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/deletesubject")
 public class DeleteSubject extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request,
+    @Override
+	protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
 

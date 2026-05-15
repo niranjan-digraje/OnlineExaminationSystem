@@ -21,7 +21,7 @@ public class StudentServiceImpl implements StudentService {
 
         return repo.isDeleteStudent(id);
     }
-    
+
     @Override
     public UserModel getStudentById(int id) {
 
@@ -34,5 +34,5 @@ public class StudentServiceImpl implements StudentService {
         return repo.isUpdateStudent(model);
     }
 
-    
+
 }

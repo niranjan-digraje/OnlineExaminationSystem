@@ -12,6 +12,7 @@ public class ResultModel {
 
     private String userName;
     private String examTitle;
+    
 
     public int getResultId() {
         return resultId;

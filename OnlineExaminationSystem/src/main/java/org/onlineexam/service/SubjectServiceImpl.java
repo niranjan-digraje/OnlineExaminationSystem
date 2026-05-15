@@ -36,7 +36,7 @@ public class SubjectServiceImpl implements SubjectService {
         return repo.getSubjectById(subjectId);
     }
 
-    
+
     @Override
     public SubjectModel fetchSubjectById(int subjectId) {
 

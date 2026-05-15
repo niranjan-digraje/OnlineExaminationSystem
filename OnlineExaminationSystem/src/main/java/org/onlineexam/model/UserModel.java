@@ -56,6 +56,7 @@ public class UserModel {
     }
 
     public void setUserCourseId(int userCourseId) {
+        System.out.println("SETTING COURSE ID = " + userCourseId);
         this.userCourseId = userCourseId;
     }
 
@@ -72,7 +73,9 @@ public class UserModel {
     }
 
     public void setCourseName(String courseName) {
+        System.out.println("Usermodel : "+courseName);
         this.courseName = courseName;
+
     }
 
     public String getRole() {
@@ -82,4 +85,12 @@ public class UserModel {
     public void setRole(String role) {
         this.role = role;
     }
+
+    @Override
+    public String toString() {
+        return "UserModel [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword="
+                + userPassword + ", userMobile=" + userMobile + ", userGender=" + userGender + ", userCourseId="
+                + userCourseId + ", courseName=" + courseName + ", role=" + role + "]";
+    }
+
 }

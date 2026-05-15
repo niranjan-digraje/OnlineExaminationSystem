@@ -1,11 +1,5 @@
 package org.onlineexam.controller;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -16,10 +10,17 @@ import org.onlineexam.service.ExamServiceImpl;
 import org.onlineexam.service.QuestionService;
 import org.onlineexam.service.QuestionServiceImpl;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 @WebServlet("/getallquestions")
 public class GetAllQuestions extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request,
+    @Override
+	protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -50,7 +51,8 @@ public class GetAllQuestions extends HttpServlet {
                 .forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request,
+    @Override
+	protected void doPost(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException, IOException {
 

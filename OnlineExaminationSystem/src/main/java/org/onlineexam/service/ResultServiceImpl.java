@@ -12,5 +12,10 @@ public class ResultServiceImpl implements ResultService  {
     public List<ResultModel> getAllResults() {
         return repo.getAllResults();
     }
-	
+
+    @Override
+    public List<ResultModel> getAllAdminResults() {
+        return repo.getAllAdminResults();
+    }
+
 }

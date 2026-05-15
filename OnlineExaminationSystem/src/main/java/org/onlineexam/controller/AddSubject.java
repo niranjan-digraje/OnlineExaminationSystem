@@ -17,7 +17,8 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/addsubject")
 public class AddSubject extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request,
+    @Override
+	protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -36,7 +37,8 @@ public class AddSubject extends HttpServlet {
                 .forward(request, response);
     }
 
-    protected void doPost(HttpServletRequest request,
+    @Override
+	protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
 

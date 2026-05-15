@@ -131,18 +131,24 @@
 
 package org.onlineexam.controller;
 
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.*;
-
-import java.io.IOException;
-import java.sql.*;
-import java.util.*;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/submitexam")
 public class SubmitExam extends HttpServlet {
 
-        protected void doPost(HttpServletRequest request,
+        @Override
+		protected void doPost(HttpServletRequest request,
                         HttpServletResponse response)
                         throws ServletException, IOException {
 

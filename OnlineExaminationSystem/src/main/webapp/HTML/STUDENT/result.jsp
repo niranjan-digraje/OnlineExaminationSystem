@@ -49,6 +49,14 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
         </a>
 
+         <a href="/OnlineExaminationSystem/HTML/STUDENT/studentdashboard.jsp"
+               class="btn btn-light me-3">
+
+                <i class="bi bi-arrow-left"></i>
+
+                Back
+
+            </a>
         <div class="text-white">
 
             <i class="bi bi-person-circle"></i>
@@ -92,11 +100,11 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             <tbody>
 
             <%
-
-            if(results != null){
+                ResultModel model = new ResultModel();
+            if(results != null ){
 
                 for(ResultModel r : results){
-
+                    if(user.equals(r.getUserName())){
             %>
 
                 <tr>
@@ -158,7 +166,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                 </tr>
 
             <%
-                }
+                }}
             }
             %>
 
